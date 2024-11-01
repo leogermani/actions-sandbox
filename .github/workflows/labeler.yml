@@ -27,4 +27,5 @@ jobs:
         with:
           message: |
             Hello world and ${{ github.event.assignee.login }} @${{ github.event.assignee.login }} ${{ github.event.assignee.name }} @${{ github.event.assignee.name }} ! :wave:
+            Hello world and ${{ github.event.pull_request.assignee.login }} @${{ github.event.pull_request.assignee.login }} ${{ github.event.pull_request.assignee.name }} @${{ github.event.pull_request.assignee.name }} ! :wave:
             This PR has been closed and the `change log` label has been added.
