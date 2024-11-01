@@ -1,2 +1,2 @@
-- any:
-  - base-branch: ['main']
+needs-changelog:
+ - base-branch: ['main']
