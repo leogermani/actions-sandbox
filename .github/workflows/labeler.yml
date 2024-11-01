@@ -25,6 +25,12 @@ jobs:
         uses: thollander/actions-comment-pull-request@v3
         with:
           message: |
-            Hello world and ${{ github.event.assignee.login }} @${{ github.event.assignee.login }} ${{ github.event.assignee.name }} @${{ github.event.assignee.name }} ! :wave:
-            Hello world and ${{ github.event.pull_request.assignee.login }} @${{ github.event.pull_request.assignee.login }} ${{ github.event.pull_request.assignee.name }} @${{ github.event.pull_request.assignee.name }} ! :wave:
-            This PR has been closed and the `change log` label has been added.
+            Hey @${{ github.event.assignee.login }}, good job getting this PR merged! :tada:
+
+            Now, the `needs-changelog` label has been added to it.
+
+            Please check if this PR needs to be included in the "Upcoming Changes" and "Release Notes" doc. If it doesn't, simply remove the lavel.
+
+            If it does, please add an entry to it to our shared document, with screenshots and testing instructions if applicable, then remove the label.
+
+            Thank you! :heart:
